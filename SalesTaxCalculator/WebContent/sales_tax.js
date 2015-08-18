@@ -8,12 +8,12 @@ function calculate_click()
 {
 	var taxRate = parseFloat(document.getElementById("taxRate").value);
 	var subTotal = parseFloat(document.getElementById("subtotal").value);
-	if(isNaN(subTotal))
+	if(isNaN(subTotal) || subTotal < 0)
 	{
 		alert("invalid subtotal, please try again");
 		document.getElementById('subtotal').value = '';
 	}
-	else if(isNaN(taxRate))
+	else if(isNaN(taxRate) || taxRate < 0)
 	{
 		alert("invalid taxRate, please try again");
 		document.getElementById('taxRate').value = '';

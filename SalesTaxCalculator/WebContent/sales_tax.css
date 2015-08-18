@@ -13,7 +13,7 @@ body {
 #taxCalc label {
     display: block;
     width: 6em;
-    text-align: right;
+    text-align: left;
     padding-right: 1em;
     float: left; }
 #taxCalc input {
